@@ -3,7 +3,19 @@ console.log("Pruebas");
 
 var total = 0;
 var monto = 0;
+var descripcion = "a";
+
 var montoTxt = document.getElementById("monto");
+var descripcionTxt = document.getElementById("descripcion");
+var totalMsg = document.getElementById("totalMsg");
+
+function nuevoProducto() {
+
+    descripcion = descripcionTxt.value;
+    monto = montoTxt.value;
+    monto = parseInt(monto);
+
+}
 
 function calcularTotal() {
     //obtener el monto del campo de texto
@@ -11,5 +23,7 @@ function calcularTotal() {
     monto = montoTxt.value;
     monto = parseInt(monto); //resolviendo conflicto de ionic -- revisar error
     total = total + monto;
-    console.log(total);
+    
+    totalMsg.innerHTML = "Total: $" + total;
+
 }

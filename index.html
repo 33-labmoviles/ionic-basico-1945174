@@ -34,7 +34,7 @@
                     </ion-col>
        
                     <ion-col>
-                        <ion-input placeholder="$0" id="monto" type="number"></ion-input>
+                        <ion-input placeholder="$0" id="monto"></ion-input>
                     </ion-col>
                 </ion-row>
 
@@ -43,6 +43,10 @@
                         <ion-button onclick="calcularTotal()">Calcular Monto</ion-button>
                     </ion-col>
                 </ion-row>
+
+                <p id="totalMsg">
+                    total: $0
+                </p>
             </ion-grid>
         </ion-app>
     </body>
