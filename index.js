@@ -16,7 +16,7 @@ function imrpimirDescripcion() {
     if(i==0){
         descripcionMsg.innerHTML =  descripcion;
     }else{
-        descripcionMsg.innerHTML =  descripcionMsg.innerHTML + descripcion;
+        descripcionMsg.innerHTML =  descripcionMsg.innerHTML + "<br/>" + descripcion;
     }
     
     imrpimirMonto();
@@ -28,10 +28,10 @@ function imrpimirMonto() {
     monto = parseInt(monto);
     
     if(i==0){
-        montoMsg.innerHTML = "$" + monto;
+        montoMsg.innerHTML = "$" + monto + "\n";
         i++;
     }else{
-        montoMsg.innerHTML = montoMsg.innerHTML + "\n" + "$" + monto;        
+        montoMsg.innerHTML = montoMsg.innerHTML + "<br/>$" + monto;        
     }
         
     calcularTotal();
