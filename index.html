@@ -40,11 +40,21 @@
 
                 <ion-row>
                     <ion-col> <!--Fila 3-->
-                        <ion-button onclick="calcularTotal()">Calcular Monto</ion-button>
+                        <ion-button onclick="imrpimirDescripcion()">Calcular Monto</ion-button>
                     </ion-col>
                 </ion-row>
 
-                <p id="totalMsg">
+                <ion-row> <!--Ticket-->
+                    <ion-col size="2" id="descripcionMsg">
+                        
+                    </ion-col>
+
+                    <ion-col id="montoMsg">
+
+                    </ion-col>
+                </ion-row>
+
+                <p id="totalMsg"> <!--Total-->
                     total: $0
                 </p>
             </ion-grid>
